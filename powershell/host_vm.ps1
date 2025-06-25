@@ -122,7 +122,7 @@ Invoke-Command -ScriptBlock {
 } -Session $VMSession
 
 if ($ExportVMs) {
-    $VMNames = @("IT-HELP-DC", "IT-HELP-DVLS", "IT-HELP-GW")
+    $VMNames = @("IT-HELP-DC", "IT-HELP-DVLS", "IT-HELP-GW", "IT-HELP-GW2")
 
     foreach ($VMName in $VMNames) {
         Write-Host "Stopping VM: $VMName"
