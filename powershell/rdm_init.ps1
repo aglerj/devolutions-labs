@@ -17,7 +17,7 @@ if (-not $LabName) {
 }
 
 if (-not $VMAliases) {
-    $VMAliases = @("DC", "DVLS", "GW")
+    $VMAliases = @("DC", "DVLS", "GW", "GW2")
 }
 
 if ([string]::IsNullOrEmpty($DataSourceName)) {
