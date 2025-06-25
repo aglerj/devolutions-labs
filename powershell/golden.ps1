@@ -132,9 +132,9 @@ Add-VMNetworkAdapter -VMName $VMName -SwitchName $SwitchName
 Write-DLabLog "Starting VM to begin customization"
 
 Start-DLabVM $VMName
-Start-Sleep 5
+Start-Sleep 10
 
-Wait-DLabVM $VMName 'PSDirect' -Timeout 360 -UserName $UserName -Password $Password
+Wait-DLabVM $VMName 'PSDirect' -Timeout 600 -UserName $UserName -Password $Password
 $VMSession = New-DLabVMSession $VMName -UserName $UserName -Password $Password
 
 Write-DLabLog "Configuring VM network adapter"
