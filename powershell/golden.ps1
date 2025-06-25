@@ -124,7 +124,7 @@ $VMSession = New-DLabVMSession $VMName -UserName $UserName -Password $Password
 
 Write-DLabLog "Shutting down VM post-installation"
 Stop-VM $VMName
-Wait-DLabVM $VMName 'Shutdown' -Timeout 120
+Wait-DLabVM $VMName 'Shutdown' -Timeout 600
 
 Get-VMNetworkAdapter -VMName $VMName | Remove-VMNetworkAdapter
 Add-VMNetworkAdapter -VMName $VMName -SwitchName $SwitchName
