@@ -122,6 +122,8 @@ Write-DLabLog "Waiting for VM to become ready after Windows installation"
 Wait-DLabVM $VMName 'PSDirect' -Timeout (45 * 60) -UserName $UserName -Password $Password
 $VMSession = New-DLabVMSession $VMName -UserName $UserName -Password $Password
 
+Start-Sleep 10
+
 Write-DLabLog "Shutting down VM post-installation"
 Stop-VM $VMName
 Wait-DLabVM $VMName 'Shutdown' -Timeout 600
