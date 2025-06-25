@@ -3,7 +3,7 @@
 $InstallWindowsAdminCenter = $false
 
 $VMAlias = "GW2"
-$VMNumber = 7
+$VMNumber = 8
 $VMName = $LabPrefix, $VMAlias -Join "-"
 $IpAddress = Get-DLabIpAddress $LabNetworkBase $VMNumber
 
