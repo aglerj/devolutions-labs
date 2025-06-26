@@ -181,7 +181,7 @@ Invoke-Command -ScriptBlock { Param($ConnectionBroker, $SessionHost, $Collection
     }
     New-RDRemoteApp @Params
 
-    $CAMachineName = $Env:ComputerName -Replace "-GW", "-DC"
+    $CAMachineName = $Env:ComputerName -Replace "-GW", "-DC" -"GW2"
     $Params = @{
         DisplayName    = "DNS Manager";
         FilePath       = "C:\Windows\System32\dnsmgmt.msc";
