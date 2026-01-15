@@ -94,7 +94,7 @@ Launch the script to build the isolated lab of virtual machines:
 .\build.ps1
 ```
 
-Launch the script to build the isolated lab of virtual machines with an additional Devolutions Gateway VM to manually configure a Gateway Farm:
+Launch the script to build the isolated lab of virtual machines with an additional Devolutions Gateway VM to manually configure a DVLS Gateway Farm:
 
 ```powershell
 .\build.ps1 -EnableGatewayFarm

@@ -34,7 +34,7 @@ $TimeGW2 = Measure-Command { .\gw_vm2.ps1 }
 Write-Host "GW2 VM creation time: $TimeGW2"
 }
 else {
-    Write-Host "Skipping GW2 VM creation (run with -CreateGW2 to enable)."
+    Write-Host "Skipping GW2 VM creation (run with -EnableGatewayFarm)."
 }
 
 Write-Host "Creating RDM VM..."
