@@ -23,7 +23,7 @@ Write-Host "GW VM creation time: $TimeGW"
 
 Write-Host "Creating GW2 VM..."
 $TimeGW2 = Measure-Command { .\gw_vm2.ps1 }
-Write-Host "GW VM creation time: $TimeGW2"
+Write-Host "GW2 VM creation time: $TimeGW2"
 
 Write-Host "Creating RDM VM..."
 $TimeRDM = Measure-Command { .\rdm_vm.ps1 }
