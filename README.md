@@ -94,6 +94,12 @@ Launch the script to build the isolated lab of virtual machines:
 .\build.ps1
 ```
 
+Launch the script to build the isolated lab of virtual machines with an additional Devolutions Gateway VM to manually configure a Gateway Farm:
+
+```powershell
+.\build.ps1 -EnableGatewayFarm
+```
+
 All virtual machines are created in order using the golden image. The entire process takes about an hour to complete.
 
 ## Host Synchronization
